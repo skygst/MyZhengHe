@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    style="@style/matchMatch"
+    android:background="@color/white">
+
+    <LinearLayout
+        style="@style/matchMatch"
+        android:weightSum="2.0">
+
+        <RelativeLayout
+            style="@style/matchMatch"
+            android:layout_weight="1.0">
+
+            <Button
+                android:id="@+id/btn_pic"
+                style="@style/wrapWrap"
+                android:text="Glide 显示图片" />
+
+            <Button
+                android:id="@+id/btn_ok_http"
+                style="@style/wrapWrap"
+                android:layout_below="@id/btn_pic"
+                android:layout_marginTop="10dp"
+                android:text="Ok Http 的使用" />
+
+            <Button
+                android:id="@+id/btn_animation"
+                style="@style/wrapWrap"
+                android:layout_below="@id/btn_ok_http"
+                android:layout_marginTop="10dp"
+                android:text="动画效果的使用" />
+
+            <Button
+                android:id="@+id/btn_dialog"
+                style="@style/wrapWrap"
+                android:layout_below="@id/btn_animation"
+                android:layout_marginTop="10dp"
+                android:text="Dialog 的使用" />
+
+            <Button
+                android:id="@+id/btn_define_view"
+                style="@style/wrapWrap"
+                android:layout_below="@id/btn_animation"
+                android:layout_marginTop="10dp"
+                android:text="自定义View的使用" />
+
+            <Button
+                android:id="@+id/btn_updata_version"
+                style="@style/wrapWrap"
+                android:layout_below="@id/btn_define_view"
+                android:layout_marginTop="10dp"
+                android:text="版本升级,自动更新" />
+
+            <Button
+                android:id="@+id/btn_theme_1"
+                style="@style/wrapWrap"
+                android:layout_below="@id/btn_updata_version"
+                android:layout_marginTop="10dp"
+                android:text="主题-1" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/matchMatch"
+            android:layout_weight="1.0">
+
+            <Button
+                android:id="@+id/btn_theme_2"
+                style="@style/wrapWrap"
+                android:layout_marginTop="10dp"
+                android:text="主题-2" />
+
+            <Button
+                android:id="@+id/btn_img"
+                style="@style/wrapWrap"
+                android:layout_below="@id/btn_theme_2"
+                android:layout_marginTop="10dp"
+                android:text="ImageView 图片处理" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/rl_define_progress"
+        style="@style/matchMatch"
+        layout="@layout/define_progress"
+        android:visibility="gone" />
+
+</RelativeLayout>

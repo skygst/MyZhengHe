@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    style="@style/matchMatch"
+    android:background="@color/white"
+    >
+    <ScrollView
+        style="@style/matchMatch">
+
+        <RelativeLayout
+            style="@style/matchMatch">
+
+            <ImageView
+                android:id="@+id/iv_network"
+                style="@style/wrapWrap"
+                />
+
+            <ImageView
+                android:id="@+id/iv_location"
+                style="@style/wrapWrap"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_below="@id/iv_network"
+                />
+
+            <ImageView
+                android:id="@+id/iv_gif"
+                style="@style/wrapWrap"
+                android:layout_below="@id/iv_location"
+                />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

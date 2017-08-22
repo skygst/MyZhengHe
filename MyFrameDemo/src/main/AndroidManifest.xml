@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gst.frame">
+
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <!-- 网络状态权限 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 访问网络权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 读SD卡权限 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- 写SD卡权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 挂载、反挂载外部文件系统 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 通过WiFi或移动基站的方式获取用户错略的经纬度信息 -->
+    <!--<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />-->
+    <!-- 手机震动 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+
+        <activity android:name=".ui.MainActivity"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ui.DialogDownActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/dialogstyle"
+            />
+        <activity
+            android:name=".ui.pic.ImageViewShowActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ui.http.HttpActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ui.pic.AnimationActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ui.DefineViewActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ui.UpdataVersionActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ui.theme_1.Theme1Activity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ui.theme_2.Theme2Activity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ui.theme_2.use_viewpager.UserViewPagerGenerateTabActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ui.theme_2.user_viewpage_fragment.UserViewPagerAndFragmentGenerateTabActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ui.tab.StartActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ui.img_test.ImageViewDemoActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ui.img_test.ImageParabolaActivity"
+            android:launchMode="singleTop" />
+        <!--<activity
+            android:name=".ui.tab.MainActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ui.tab.Main2Activity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ui.tab.Main3Activity"
+            android:launchMode="singleTop" />-->
+
+
+        <service
+            android:name=".service.DownloadService"
+            android:enabled="true" />
+        <service android:name=".service.DownloadService2" />
+
+    </application>
+
+</manifest>

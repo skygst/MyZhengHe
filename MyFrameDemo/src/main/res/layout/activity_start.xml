@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<Button
+    android:id="@+id/id_btn_1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="顶部"/>
+
+    <Button
+        android:id="@+id/id_btn_2"
+        android:layout_below="@id/id_btn_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="底部"
+        />
+
+    <Button
+        android:id="@+id/id_btn_3"
+        android:layout_below="@id/id_btn_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="合起来"
+        />
+
+    <Button
+        android:id="@+id/id_theme_2_tab_1"
+        android:layout_below="@id/id_btn_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="单纯使用Fragment实现Tab的方式"
+        />
+    <Button
+        android:id="@+id/id_theme_2_tab_2"
+        android:layout_below="@id/id_theme_2_tab_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="单纯使用ViewPager 实现Tab"
+        />
+    <Button
+        android:id="@+id/id_theme_2_tab_3"
+        android:layout_below="@id/id_theme_2_tab_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="使用 ViewPager + Fragment 实现Tab"
+        />
+</RelativeLayout>

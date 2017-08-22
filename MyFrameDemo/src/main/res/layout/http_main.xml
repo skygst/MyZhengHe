@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    style="@style/matchMatch"
+    android:background="@color/white"
+    >
+    <ScrollView
+        style="@style/matchMatch">
+
+        <RelativeLayout
+            style="@style/matchMatch">
+
+            <Button
+                android:id="@+id/btn_get"
+                style="@style/wrapWrap"
+                android:layout_marginTop="10dp"
+                android:text="get获取数据"
+                />
+            <Button
+                android:id="@+id/btn_post"
+                style="@style/wrapWrap"
+                android:text="post获取数据"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/btn_get"
+                />
+            <Button
+                android:id="@+id/btn_retrofit"
+                style="@style/wrapWrap"
+                android:text="Retrofit 获取数据"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/btn_post"
+                />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

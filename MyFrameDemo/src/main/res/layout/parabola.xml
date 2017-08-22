@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    style="@style/matchMatch"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/iv_fire_1"
+        style="@style/wrapWrap"
+        android:src="@drawable/ring_of_fire_1"
+        />
+
+    <ImageView
+        android:id="@+id/iv_pic"
+        style="@style/wrapWrap"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="100dp"
+        android:src="@drawable/lailai_1"
+        />
+
+    <ImageView
+        android:id="@+id/iv_fire_2"
+        style="@style/wrapWrap"
+        android:src="@drawable/ring_of_fire_2"
+        />
+
+
+</RelativeLayout>

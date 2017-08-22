@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    style="@style/matchMatch"
+    android:background="@color/white" >
+
+    <Button
+        android:id="@+id/btn_1"
+        style="@style/wrapWrap"
+        android:text="移动"
+        />
+    <Button
+        android:id="@+id/btn_2"
+        style="@style/wrapWrap"
+        android:layout_toRightOf="@id/btn_1"
+        android:text="旋转"
+        />
+    <Button
+        android:id="@+id/btn_3"
+        style="@style/wrapWrap"
+        android:layout_below="@id/btn_2"
+        android:text="缩放"
+        />
+    <Button
+        android:id="@+id/btn_4"
+        style="@style/wrapWrap"
+        android:layout_toRightOf="@id/btn_3"
+        android:layout_below="@id/btn_2"
+        android:text="渐变"
+        />
+    <Button
+        android:id="@+id/btn_5"
+        style="@style/wrapWrap"
+        android:layout_below="@id/btn_3"
+        android:text="复合动画（动画集合）"
+        />
+    <Button
+        android:id="@+id/btn_6"
+        style="@style/wrapWrap"
+        android:layout_below="@id/btn_3"
+        android:layout_toRightOf="@id/btn_5"
+        android:text="抛物线"
+        />
+    <ImageView
+        android:id="@+id/iv_pic"
+        style="@style/wrapWrap"
+        android:layout_below="@id/btn_5"
+        android:layout_width="100dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/color_pic_bus_1"
+        />
+
+
+
+
+</RelativeLayout>

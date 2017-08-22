@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/id_ll_tab_bg"
+    style="@style/matchMatch"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_pic"
+        style="@style/wrapContent"
+        android:src="@drawable/rocket_action" />
+
+    <ImageView
+        android:id="@+id/iv_txt"
+        style="@style/wrapContent"
+        android:src="@drawable/loading_txt_down_load" />
+
+    <ProgressBar
+        android:id="@+id/my_progress"
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:max="100"
+        android:progress="40"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:progressDrawable="@drawable/medal_progress"/>
+
+    <ImageView
+        android:id="@+id/iv_bulb"
+        style="@style/wrapContent"
+        android:src="@drawable/icon_bulb" />
+
+    <TextView
+        android:id="@+id/tv_des"
+        style="@style/wrapContent"
+        android:layout_alignTop="@id/iv_bulb"
+        android:layout_toRightOf="@id/iv_bulb"
+        android:layout_alignRight="@id/my_progress"
+        android:text="小技巧：如果游戏没有声音，可以查看静音开关是否打开"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="-3dp"
+        android:textSize="15sp"
+        android:textColor="#85b8f7"
+        />
+
+    <Button
+        android:id="@+id/btn_click"
+        style="@style/wrapContent"
+        android:text="点击弹出dialog"
+        android:textColor="@color/red"
+        />
+
+    <com.gst.frame.custom.ClickImageView
+        android:id="@+id/iv_cancel"
+        style="@style/wrapContent"
+        android:src="@drawable/down_load_cancel"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/wrapContent"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/head"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_pic"
+        android:layout_marginTop="10dp"
+        android:layout_alignLeft="@id/iv_pic"
+        android:layout_alignRight="@id/iv_pic"
+        android:gravity="center_horizontal"
+        android:text="标题"
+        />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="获得更多..."
+        android:gravity="center_vertical"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="@id/rl_1"
+        android:layout_alignTop="@id/rl_1"
+        android:layout_alignBottom="@id/rl_1"
+        android:layout_marginRight="20dp"
+        android:visibility="gone"
+        />
+</RelativeLayout>

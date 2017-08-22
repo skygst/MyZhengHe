@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    style="@style/matchMatch"
+    android:background="@color/white" >
+
+    <LinearLayout
+        style="@style/matchMatch"
+        android:weightSum="2.0"
+        >
+
+        <RelativeLayout
+            style="@style/matchMatch"
+            android:layout_weight="1.0"
+            >
+            <Button
+                android:id="@+id/btn_paowuxian"
+                style="@style/wrapWrap"
+                android:text="ImageVIew 抛物线" />
+        </RelativeLayout>
+        <RelativeLayout
+            style="@style/matchMatch"
+            android:layout_weight="1.0"
+            >
+            <Button
+                android:id="@+id/btn_theme_2"
+                style="@style/wrapWrap"
+                android:layout_marginTop="10dp"
+                android:text="主题-2" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
