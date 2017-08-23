@@ -99,9 +99,7 @@ public class MainActivity extends AppCompatActivity implements MainView, View.On
     @Override
     public void onClick(View v) {
         if(v == ivHeadPortrait) { // 点击头像
-            
             Toast.makeText(mContext, "点击了头像", Toast.LENGTH_SHORT).show();
-            
         }
     }
 }
