@@ -88,6 +88,12 @@
             android:name=".ui.tab.Main3Activity"
             android:launchMode="singleTop" />-->
 
+        <activity
+            android:name=".ui.text.TextMainActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ui.text.TextAndPicActivity"
+            android:launchMode="singleTop" />
 
         <service
             android:name=".service.DownloadService"

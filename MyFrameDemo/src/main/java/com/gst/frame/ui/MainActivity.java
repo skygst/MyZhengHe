@@ -13,13 +13,14 @@ import com.gst.frame.ui.http.HttpActivity;
 import com.gst.frame.ui.img_test.ImageViewDemoActivity;
 import com.gst.frame.ui.pic.AnimationActivity;
 import com.gst.frame.ui.pic.ImageViewShowActivity;
+import com.gst.frame.ui.text.TextMainActivity;
 import com.gst.frame.ui.theme_1.Theme1Activity;
 import com.gst.frame.ui.theme_2.Theme2Activity;
 
 public class MainActivity extends ProgressAnimationBaseActivity implements View.OnClickListener {
 
     private Button btnPic, btnOkHttp, btnAnimation, btnDialog, btnDefineView, btnUpdataVersion,
-                btnTheme1, btnTheme2, btnImg;
+                btnTheme1, btnTheme2, btnImg, btnText;
     private Context mContext;
 
     @Override
@@ -46,6 +47,7 @@ public class MainActivity extends ProgressAnimationBaseActivity implements View.
         btnTheme1 = (Button) findViewById(R.id.btn_theme_1);
         btnTheme2 = (Button) findViewById(R.id.btn_theme_2);
         btnImg = (Button) findViewById(R.id.btn_img);
+        btnText = (Button) findViewById(R.id.btn_txt);
 
         btnPic.setOnClickListener(this);
         btnOkHttp.setOnClickListener(this);
@@ -56,6 +58,7 @@ public class MainActivity extends ProgressAnimationBaseActivity implements View.
         btnTheme1.setOnClickListener(this);
         btnTheme2.setOnClickListener(this);
         btnImg.setOnClickListener(this);
+        btnText.setOnClickListener(this);
         startLoadingAnimation();
         threadAnimation();
     }
@@ -95,6 +98,8 @@ public class MainActivity extends ProgressAnimationBaseActivity implements View.
 //            gotoActivity(StartActivity.class);
         } else if(v == btnImg) { // ImageVIew一些demo
             gotoActivity(ImageViewDemoActivity.class);
+        } else if(v == btnText) {
+            gotoActivity(TextMainActivity.class);
         }
     }
 

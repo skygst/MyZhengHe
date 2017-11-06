@@ -77,6 +77,13 @@
                 android:layout_marginTop="10dp"
                 android:text="ImageView 图片处理" />
 
+            <Button
+                android:id="@+id/btn_txt"
+                style="@style/wrapWrap"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/btn_img"
+                android:text="TextView 属性" />
+
         </RelativeLayout>
 
 
